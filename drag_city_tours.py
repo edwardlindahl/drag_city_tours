@@ -115,4 +115,4 @@ if __name__ == "__main__":
     globals.initialize()
     find_shows()
     if len(email_list) > 0:
-        mailer.email('edward.t.lindahl@gmail.com', message)
+        mailer.email('SENDER-EMAIL', message)
