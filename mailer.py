@@ -8,5 +8,5 @@ def email(sender, message):
     password = globals.password
     subject = globals.subject
     smtpObj.login(sender, password)
-    smtpObj.sendmail('edward.t.lindahl@gmail.com', 'edward.lindahl@gmail.com', ("Subject: {}.\n{}").format(subject, message))
+    smtpObj.sendmail('SENDER-EMAIL', 'RECIPIENT-EMAIL', ("Subject: {}.\n{}").format(subject, message))
     smtpObj.quit
